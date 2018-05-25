@@ -11,13 +11,16 @@ It was tested while on Internet network.
 ### To Run:
 
 Make sure you add your client id, secret, and redirect uri. I would advise setting the redirect URI to port 80 for simplicity.
+Put your variables in a file called data with this as the template: 
+
+CLIENT_ID=
+CLIENT_SECRET=
+REDIRECT_URI=
+METADATA=
 
 ```
 sudo docker run --rm \
 -p 80:80 \ 
--e METADATA=<metadata> \
--e CLIENT_ID=<your client id> \
--e CLIENT_SECRET=<your client secret> \
--e REDIRECT_URI=<your app redirect uri> \
-<your-name>/ubuntu-oidc
+--env-file data \
+patricklunney/ubuntu-oidc
 ```
