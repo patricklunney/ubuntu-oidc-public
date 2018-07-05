@@ -17,6 +17,7 @@ CLIENT_ID=
 CLIENT_SECRET=
 REDIRECT_URI=
 METADATA=
+SCOPE=
 
 ```
 sudo docker run --rm \
