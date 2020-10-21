@@ -13,12 +13,15 @@ It was tested while on Internet network.
 Make sure you add your client id, secret, and redirect uri. I would advise setting the redirect URI to port 80 for simplicity.
 Put your variables in a file called data with this as the template: 
 
+```
 CLIENT_ID=
 CLIENT_SECRET=
 REDIRECT_URI=
 METADATA=
 SCOPE=
+```
 
+Start the container
 ```
 sudo docker run --rm \
 -p 80:80 \ 
