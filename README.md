@@ -11,7 +11,7 @@ It was tested while on Internet network.
 ### To Run:
 
 Make sure you add your client id, secret, and redirect uri. I would advise setting the redirect URI to port 80 for simplicity.
-Put your variables in a file called data with this as the template: 
+Put your variables in a file called `data` with this as the template: 
 
 ```
 CLIENT_ID=
